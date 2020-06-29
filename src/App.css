@@ -1,0 +1,360 @@
+body{
+  height: 100%;
+}
+.App {
+  display: flex;
+  flex-flow:column;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 180px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.header{
+  width: 100%;
+  background-color: #7540EE;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+  padding: 15px 8% 15px 8%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.header-image{
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+  }
+}
+
+.profile-content{
+  text-align: right;
+  padding: 15px 15% 15px 0px;
+}
+
+.profile-content h4{
+  color: #17182A;
+  font-size: 20px;
+  display: grid;
+}
+
+.inline-info{
+  color: #C6CBD0;
+  font-size: 12px;
+  font-weight: 100;  
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-content {
+    /*justify-content: center;*/
+    padding: 15px 40px 15px 15px;
+  }
+}
+
+.date-select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+  width: 84%;
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+
+.reservation-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px 5px 10px;
+  width: 84%;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.arrow-image{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.left-arrow-image{
+  transform: rotate(180deg);
+}
+
+.date-select h4{
+  color: #86869B;
+  font-size: 20px;
+  display: grid;
+  margin-bottom: 0px;
+}
+
+.row{
+  width: 86%;
+  margin: 2% 7% 7% 7%;
+}
+
+.slot-item{
+  border: 1px solid #696969;
+  padding: 15px;
+  font-size: 15px;
+  color: #696969;
+  font-weight: 600;
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+.inactive{
+  border: 2px solid #eee;
+  color: #ddd;
+  cursor: not-allowed;
+}
+
+.inactive-arrow{
+  cursor: not-allowed;
+}
+
+.selected{
+  border: 2px solid #30A2FF;
+  color: white;
+  background-color: #30A2FF;
+}
+
+.remove-button{
+  background-color: #FFE2DC;
+  color: #FF9684;
+  font-size: 16px;
+  position:fixed;
+  bottom: 0px;
+  border: 0px;
+  padding: 10px 15px 10px 15px;
+  width: 30%;
+  left: 35%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+  .remove-button {
+    width: 100%;
+    left: 0px;
+  }
+  .row{
+    margin: 2% 7% 20% 7%;
+  }
+}
+
+.selected-slot{
+  font-size: 12px;
+}
+
+.myslots-container{
+    justify-content: flex-end;
+    width: 68%;
+}
+
+.day-wise-slots{
+  width: 98%;
+  text-align: end;
+}
+
+.day-wise-slots-border{
+  border-bottom: 1px dotted #696969;
+}
+
+.day-wise-slots h4{
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .myslots-container{
+    width: 84%;
+  }
+  .day-wise-slots h4{
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+.booked-slot-item{
+  width: 100%;
+  text-align: left;
+  padding: 10px 0px 10px 2%;
+}
+
+.inline-name{
+  font-size: 12.5px;
+  color: #17182A;
+  font-weight: 600;
+  margin-left: 1%;
+}
+
+.delete-button{
+  background-color: transparent;
+  color: #DE5448;
+  border: 0px;
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+.login-content{
+  justify-content: center;
+  display: flex;
+  padding-top: 5%;
+}
+
+.login-content-internal{
+  text-align: left;
+  width: 25%;
+  padding: 30px 0px 30px 2%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .login-content-internal{
+    width: 80%;
+  }
+}
+
+.login-text{
+  color: #ccc;
+  font-size: 16px;
+}
+
+.input{
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  margin: 15px 0px 15px 0px;
+  width: 96%;
+  color: #282923;
+}
+
+.button-view{
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.login-button{
+  color: #733EED;
+  background-color: #E3D9FC;
+  padding: 6px 20px 6px 20px;
+  border-radius: 20px;
+  border: 0px;
+}
+
+.forgot-button{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #EBE3FD;
+  color: #733EED;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.avatar-container{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar-image{
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.users-content{
+  width: 100%;
+  padding: 3% 5% 3% 5%;
+
+}
+
+.avatar-margin{
+  margin-bottom: 25px;
+}
+
+.no-users{
+  width: 100%;
+}
+
+.header-button{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+}
+
+.jsx-input{
+  width: 100%;
+  outline: none;
+  margin-top: 3%;
+  border: 1px solid #7540EE;
+  border-radius: 5px;
+  padding: 15px;
+  line-height: 15px;
+}
+
+.error-jsx{
+  text-align: center;
+  color: red;
+  margin-top: 20%;
+}
+
+.render-button{
+  border: 0px;
+  background-color: #7540EE;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.logout-button{
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: 0px;
+}
